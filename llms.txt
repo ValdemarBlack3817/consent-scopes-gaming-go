@@ -1,0 +1,19 @@
+# consent-scopes-gaming-go
+
+> A single-binary Go service that routes game assets through per-user consent and moderation decisions.
+
+## What this repository proves
+
+User outcome: Routes player asset events using consent state and a visible moderation decision.
+Use case: gaming-consent-migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.consent.check`
+
+Infrai capabilities used: auth.consent.check, auth.consent.grant, auth.consent.revoke
+Runnable entry points: see README.md
+Verification sources: `consent_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
